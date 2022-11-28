@@ -7,16 +7,8 @@ import styles from "./style.module.css";
 
 const Game = () => {
   const [doors, setDoors] = useState([]);
-  // const [validValues, setValidValues] = useState(false)
 
   const router = useRouter();
-
-  // const isValidValues = () => {
-
-  //   const paramsDoors = +router.query.doors;
-  //     const paramsGift = +router.query.withGift;
-
-  // }
 
   const createDoors = (quantity: number, indexGift: number): DoorModel[] => {
     return Array.from({ length: quantity }, (_, i) => {
