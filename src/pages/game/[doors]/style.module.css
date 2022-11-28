@@ -1,0 +1,39 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.doors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-self: stretch;
+
+  height: fit-content;
+  overflow-y: auto;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.link > a {
+  padding: 10px 25px;
+
+  font-size: 2rem;
+  color: #fff;
+  background-color: brown;
+}
+
+.link > a:hover {
+  background-color: chocolate;
+}

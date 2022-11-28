@@ -12,11 +12,13 @@
 .frame {
   display: flex;
   flex-grow: 1;
+  flex-direction: column-reverse;
 
   width: 90%;
 
   border: 5px solid brown;
   border-bottom: unset;
+  background-color: #0005;
 }
 
 .door {
@@ -56,9 +58,14 @@
   background-color: #ddd;
 }
 
-.selected,
+.selected {
+  border-color: yellow;
+}
+
+.selected .number {
+  color: yellow;
+}
+
 .selected .knob {
   background-color: yellow;
-  color: yellow;
-  border-color: yellow;
 }

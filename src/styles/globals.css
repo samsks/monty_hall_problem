@@ -8,9 +8,24 @@ body {
   color: #fff;
 }
 
+html {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 * {
@@ -20,6 +35,9 @@ a {
 :root {
   --door-width: 200px;
   --door-height: 310px;
+
+  --card-width: 300px;
+  --card-height: 300px;
 }
 
 /* 

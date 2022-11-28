@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+
+  width: var(--card-width);
+  height: var(--card-height);
+
+  margin: 3px;
+  padding: 6.666666666666667%;
+
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}

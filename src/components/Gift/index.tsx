@@ -1,4 +1,4 @@
-import styles from "./Gift.module.css";
+import styles from "./style.module.css";
 
 const Gift = () => {
   return (

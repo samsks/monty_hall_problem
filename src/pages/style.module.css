@@ -1,0 +1,35 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  align-self: center;
+
+  line-height: fit-content;
+
+  margin: 0;
+}
+
+.home > div {
+  display: flex;
+}
+
+.link {
+  position: relative;
+}
+
+.link h2 {
+  position: absolute;
+  display: inline-block;
+  line-height: 0;
+  text-align: center;
+  align-self: center;
+  width: 85%;
+  height: fit-content;
+}
