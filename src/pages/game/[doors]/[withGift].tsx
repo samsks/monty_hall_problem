@@ -22,8 +22,7 @@ const Game = () => {
     if (router.query.doors && router.query.withGift) {
       const paramsDoors = +router.query.doors;
       const paramsGift = +router.query.withGift;
-      const doorsB = createDoors(paramsDoors, paramsGift);
-      setDoors(doorsB);
+      setDoors(createDoors(paramsDoors, paramsGift));
     }
   }, [router?.query]);
 
