@@ -6,7 +6,7 @@ import DoorModel from "../../../models/door";
 import styles from "./style.module.css";
 
 const Game = () => {
-  const [doors, setDoors] = useState([]);
+  const [doors, setDoors] = useState([] as DoorModel[]);
 
   const router = useRouter();
 
@@ -22,7 +22,8 @@ const Game = () => {
     if (router.query.doors && router.query.withGift) {
       const paramsDoors = +router.query.doors;
       const paramsGift = +router.query.withGift;
-      setDoors(createDoors(paramsDoors, paramsGift));
+      const doorsB = createDoors(paramsDoors, paramsGift);
+      setDoors(doorsB);
     }
   }, [router?.query]);
 
